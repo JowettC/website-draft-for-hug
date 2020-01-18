@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Hug Community</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- javascript & jquery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.css">
+  <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.js"></script>
+
+
+  <!-- Bootstrap -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <style>
+    body {
+      background: url('images/background_2.jpg') no-repeat center center fixed;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+    }
+
+    p {
+      background-color: ;
+
+    }
+
+    li {
+      padding: 20px
+    }
+
+    .nav-item,
+    .navbar-brand,
+    .nav-link {
+
+      font-weight: bold;
+
+      color: #313131;
+
+
+    }
+
+    :root {
+      --mainColor: #F05A5A;
+    }
+
+    .nav-link {
+
+
+      font-weight: bold;
+      background:
+        linear-gradient(to bottom, var(--mainColor) 0%,
+          var(--mainColor) 100%);
+      background-position: 0 100%;
+      background-repeat: repeat-x;
+      background-size: 4px 4px;
+      color: #313131;
+      text-decoration: none;
+      transition: background-size .2s;
+      text-align: center;
+
+    }
+
+
+    .nav-link:hover {
+      background-size: 4px 50px;
+      color: #ffffff;
+    }
+
+    .active {
+
+      pointer-events: none;
+    }
+
+    /* content */
+    .line-1,
+    .line-2,
+    .line-3 {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    .slogan {
+      font-size: 5.0vh;
+      align-content: center;
+      font-family: "Impact", "fantasy";
+    }
+
+    .navbar-nav {
+      text-align: center;
+
+
+    }
+
+    li {
+      float: none;
+      display: inline-block;
+    }
+
+    .navbar-toggler,
+    .navbar-toggler:focus,
+    .navbar-toggler:active {
+      background-image: url(images/icon.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+
+    }
+
+    .line-2 {
+      color: #F05A5A;
+
+    }
+
+    .collapsing,
+    .show {
+      background-color: white;
+      opacity: 0.8;
+      border-radius: 15px;
+      border: 0px;
+      outline: none;
+      box-shadow: none;
+
+
+    }
+
+    .homebutton {
+      background-color: #313131;
+      color: white;
+      font-size: 20px;
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      margin: 20px;
+      width: 200px;
+      text-align: center;
+      border-style: solid;
+      border-width: 0px 0px 5px 0px;
+      border-color: #F05A5A;
+    }
+
+    .button-text {
+      color: white;
+      font-weight: bold;
+      -webkit-transition: color 0.5s;
+      -moz-transition: color 0.5s;
+      -ms-transition: color 0.5s;
+      -o-transition: color 0.5s;
+      transition: color 0.5s;
+    }
+
+    .button-text:hover {
+      color: #F05A5A;
+    }
+
+    #ProjectPage {
+      align-items: center;
+      text-align: center;
+    }
+
+    .heading {
+      font-size: 30px;
+      font-weight: bold;
+      border-style: solid;
+      border-color: #F05A5A;
+      border-width: 0px 0px 5px 0px;
+    }
+
+    .description {
+      background-color: rgba(255, 255, 255, 0.8);
+      font-size: 15px;
+    }
+  </style>
+
+
+</head>
+
+<body>
+  <div class="container" style="width: 100%;" id="main">
+    <nav class="navbar navbar-expand-lg " style="height:100px;  float: none;
+  position: relative;
+  left: 0%;
+  ">
+      <!-- <img src="images/SBNLogo.png" height="50" style="padding-right:10px;" /> -->
+      <a class="navbar-brand" href="#">Logo <br /> Here</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon" style="width:10px"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown" style="">
+        <ul class="navbar-nav" style="align-content: center;">
+          <!-- <li class="nav-item active">
+            <a class="nav-link" href="home.html">HOME <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="home.html">THE PROJECT <span class="sr-only"></span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="home.html">SERVICE <span class="sr-only"></span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="home.html">TESTIMONIALS <span class="sr-only"></span></a>
+          </li> -->
+          <!-- <li class="nav-item">
+            <a class="nav-link" href="home.html">EVENTS <span class="sr-only"></span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="home.html">CONTACT US <span class="sr-only"></span></a>
+          </li> -->
+        </ul>
+        <!-- log out  -->
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link active" id="home">HOME <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="project">THE PROJECT <span class="sr-only"></span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="home.html">SERVICE <span class="sr-only"></span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="home.html">TESTIMONIALS <span class="sr-only"></span></a>
+          </li>
+          <!-- <li class="nav-item">
+            <a class="nav-link" href="#" id="logOutBtn">Log Out</a>
+          </li> -->
+        </ul>
+
+      </div>
+    </nav>
+    <div id="homePage">
+      <br />
+      <br />
+
+
+      <div class="slogan">
+        <div class="container" style="width: 100%;text-align: center">
+          <span class="line-1">
+            EVERY YOUTH
+          </span>
+        </div>
+        <div class="container" style="width: 100%;text-align: center">
+          <span class="line-2">
+            DESERVES
+          </span>
+        </div>
+        <div class="container" style="width: 100%;text-align: center">
+          <span class="line-3">
+            A SECOND CHANCE
+          </span>
+        </div>
+      </div>
+
+      <br />
+
+      <div class="row justify-content-center">
+        <a class="homebutton hb1" id = "learnMore"><span class="button-text hb1-text">LEARN MORE</span></a>
+        <!-- <a class="homebutton hb2"><span class="button-text hb2-text">TESTIMONIALS</span></a>
+      <a class="homebutton hb3"><span class="button-text hb3-text">SEEK HELP</span></a> -->
+      </div>
+
+    </div>
+  </div>
+
+  <div class="container" style="width: 100%;margin: 0 auto; text-align: center; visibility:hidden;" id="projectPage">
+    <br />
+    <span class="heading">THE PROJECT</span>
+    <br />
+    <br />
+    <br />
+    <div class="slogan">
+      <div class="container" style="width: 100%;text-align: center">
+        <span class="line-1">
+          SAVED OVER
+        </span>
+      </div>
+      <div class="container" style="width: 100%;text-align: center">
+        <span class="line-2">
+          THREE HUNDRED
+        </span>
+      </div>
+      <div class="container" style="width: 100%;text-align: center">
+        <span class="line-3">
+          FAMILIES
+        </span>
+      </div>
+    </div>
+
+
+    <div>
+      <img src="images/content_1.jpg" height="230" style="padding-right:10px;" />
+      <img src="images/content_1.jpg" height="230" style="padding-right:10px;" />
+    </div>
+    <br />
+    <div class="description" style="height:350">
+      <span height> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
+        specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and
+        more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum<br />
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
+        book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more
+        recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</span>
+    </div>
+
+
+
+  </div>
+
+
+</body>
+<script>
+  var homePage = $("#homePage")
+  var projectpage = $("#projectPage").hide()
+  //project is clicked
+  document.getElementById("project").addEventListener("click", function() {
+    homePage.fadeOut();
+    $("#home").removeClass("active");
+    var delayInMilliseconds = 500; //time delay second
+
+    setTimeout(function() {
+      $("#projectPage").css("visibility", "visible");
+      projectpage.fadeIn();
+    }, delayInMilliseconds);
+  });
+  document.getElementById("learnMore").addEventListener("click", function() {
+    homePage.fadeOut();
+    $("#home").removeClass("active");
+    var delayInMilliseconds = 500; //time delay second
+
+    setTimeout(function() {
+      $("#projectPage").css("visibility", "visible");
+      projectpage.fadeIn();
+    }, delayInMilliseconds);
+  });
+  // home is clicked
+  document.getElementById("home").addEventListener("click", function() {
+    $("#projectPage").fadeOut();
+    var delayInMilliseconds = 500; //time delay second
+
+    setTimeout(function() {
+      homePage.fadeIn();
+    }, delayInMilliseconds);
+  });
+</script>
+
+</html>
